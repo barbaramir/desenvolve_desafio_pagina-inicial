@@ -12,6 +12,7 @@
    - Cabeçalho com logo do programa, título da página e campo de pesquisa
    - Conteúdo principal com cards de identificação e descrição das trilhas e botão de redirecionamento para cada ementa correspondente 
    - Rodapé com identificação das empresas idealizadoras, logo do Programa Desenvolve, menu de navegação e links para redes sociais
+   - Responsividade para telas em formato desktop, tablet e mobile 
 
 ## :ballot_box_with_check: Tecnologias utilizadas no projeto
 
