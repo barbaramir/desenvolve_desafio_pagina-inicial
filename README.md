@@ -1,7 +1,7 @@
 <h1 align="center">Página Inicial - Programa Desenvolve</h1>
 
 ## :pencil: Descrição do Projeto
-<p>Página inicial do Programa Desenvolve proposta como desafio pela instrutora Milena Emmert da Alura para a trilha Fullstack - Programa Desenvolve Boticário 2023</p>
+<p>Criação da página inicial do Programa Desenvolve, proposto como desafio pela instrutora Milena Emmert da Alura para a trilha Fullstack - Programa Desenvolve Boticário 2023</p>
 
 ## :pushpin: Status do Projeto
 <p>Projeto Finalizado :white_check_mark:</p>
