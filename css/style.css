@@ -1,0 +1,337 @@
+:root {
+    --branco: #FFFFFF;
+    --cinza: #F5F5F5;
+    --azul-medio-titulo: #0000EE;
+    --azul-medio-texto: #264FEC;
+    --azul-escuro-texto: #364372;
+    --azul-escuro-fundo: #33475B;
+    --rosa-claro: #FF97D3;
+    --rosa-escuro: #DB1E8C;
+    --preto: #000000;
+
+    --fonte-principal: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+	background-color: var(--azul-escuro-fundo);
+	font-family: var(--fonte-principal);
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+header.container {
+    display: flex;
+    background-color: var(--branco);
+    height: 80px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 1080px;
+    height: 80px;
+}
+
+.minilogo-desenvolve {
+    width: 28.56px;
+    height: 34.16px;
+}
+
+.titulo-principal {
+    color: var(--azul-medio-titulo);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.campo-pesquisa {
+    display: flex;
+    align-items: center;
+    background-color: var(--rosa-escuro);
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.texto-pesquisa {
+    background-color: transparent;
+    padding-left: 4px;
+    font-size: 14px;
+}
+
+::placeholder{
+    color: var(--rosa-claro);
+}
+
+.main-container {
+    display: flex;
+    width: 1080px;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 540px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 32px;
+    box-sizing: border-box;
+    background-color: var(--cinza);
+}
+
+.cartao:nth-child(3n + 1) {
+    margin: 20px 20px 20px 0px;
+}
+
+.cartao:nth-child(3n + 3) {
+    margin: 20px 0px 20px 20px;
+}
+
+.cartao:nth-child(2) {
+    margin: 20px 20px 20px 20px; 
+}
+
+.cartao:nth-child(5) {
+    margin: 20px 20px 20px 20px; 
+}
+
+.titulo-cartao {
+    font-size: 24px;
+    color: var(--azul-escuro-texto);
+    font-weight: 600;
+    padding-bottom: 24px;
+}
+
+.descricao-cartao {
+    font-size: 16px;
+    line-height: 20.8px;
+    font-weight: 400;
+    padding-bottom: 16px;
+}
+
+.botao-ementa {
+    display: flex;
+    color: var(--azul-medio-texto);
+    padding: 14px;
+    border: 1px solid var(--azul-medio-texto);
+    border-radius: 4px;
+    justify-content: center;
+}
+
+footer.container {
+    background-color: var(--branco);
+}
+
+.rodape {
+    display: flex;
+    width: 1080px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px;
+}
+
+.logos-empresas {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.rodape-empresas {
+    display: flex;
+    align-items: center;
+}
+
+.logo-boticario {
+    padding-right: 32px;
+}
+
+.logo-desenvolve {
+    width: 196.23px;
+    height: 66.42px;
+}
+
+.rodape-contato {
+    display: flex;
+}  
+
+.rodape-links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 64px;
+}
+
+.link-rodape, .texto-rodape {
+    color: var(--preto);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px;
+}
+
+.rodape-redes-sociais {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+}
+
+.icones {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+@media screen and (max-width: 768px) {   
+
+    header.container {
+        padding: 0 24px 0 24px;
+        box-sizing: border-box;
+    }
+    
+    .titulo-principal {
+        font-size: 20px;
+    }
+
+    .campo-pesquisa {
+        background-color: transparent;
+        padding: 0px;
+    }
+    
+    .texto-pesquisa {
+        display: none; 
+    }
+
+    .main-container {
+        width: 100vw;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .cartao {
+        align-items: center;
+        justify-content: center;
+        width: 87%;
+        height: auto;
+    }
+
+    .cartao:nth-child(n + 1) {
+        margin: 20px 0px 20px 0px;
+    }
+
+    .titulo-cartao {
+        font-size: 18px;
+    }
+    
+    .descricao-cartao {
+        font-size: 14px;
+    }
+
+    .rodape {
+        width: 100vw;
+        flex-direction: column;
+        margin: 24px;
+    }
+
+    .logos-empresas {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .rodape-empresas {
+        justify-content: space-between;
+        padding: 0px;
+        box-sizing: border-box;
+        margin-bottom: 32px;
+    }
+
+    .logo-boticario, .logo-alura, .logo-desenvolve {
+        scale: 80%;
+    }
+
+    .rodape-contato {
+        margin-top: 32px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape-links {
+        margin-bottom: 8px;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+    }
+
+    .rodape-redes-sociais {
+        margin-bottom: 8px;
+    }
+
+}
+
+@media only screen and (max-width: 1079px) and (min-width: 769px) {
+    header.container {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .cabecalho {
+        width: 768px;
+        padding: 0px 24px 0px 24px;
+        box-sizing: border-box;
+    }
+
+    .main-container {
+        width: 768px;
+    }
+
+    .cartao {
+        width: 40%;
+        height: auto;
+    }
+
+    .cartao:nth-child(2n+2) {
+        margin: 20px 0px 20px 30px;
+    }
+
+    .cartao:nth-child(n+1) {
+        margin: 20px 30px 20px 0px;
+    }
+
+    .rodape {
+        width: 768px;
+        flex-direction: column;
+    }
+
+    .logos-empresas {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .logo-boticario, .logo-alura, .logo-desenvolve {
+        scale: 70%;
+        margin: 0px 24px 16px 24px;
+    }
+
+    .logo-boticario {
+        padding-right: 0px;
+    }
+
+    .rodape-contato {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .rodape-links {
+        align-items: center;
+    }
+}
